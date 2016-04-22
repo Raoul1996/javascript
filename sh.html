@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>galry</title>
+    <script>
+        function showpic(whichpic) {
+            var whichp=whichpic.getAttribute("href");
+            var pos=document.getElementById("pos");
+            pos.setAttribute("src",whichp);
+            var text=whichpic.getAttribute("title");
+            var desa=document.getElementById("desa");
+            desa.firstChild.nodeValue = text;
+        }
+        // function contBodayChildren() {
+        //     var body_element= document.getElementsByTagName("body")[0];
+        //     alert(body_element.childNodes.length);
+        // }
+        //window.onload = contBodayChildren:
+
+
+    </script>
+</head>
+<body>
+
+<div class="outer">
+    <ol>
+        <li><a href="images/ad3.jpg" title="1902" onclick="showpic(this);return false;">sdafds</a></li>
+        <li><a href="images/ad2.jpg" title="109412" onclick="showpic(this);return false;">sdafa</a></li>
+        <li><a href="images/ad.jpg" title="faij" onclick="showpic(this);return false;">adsfda</a></li>
+        <img src="images/ad.jpg" alt="" id="pos" >
+        <p id="desa"> </p>
+
+    </ol>
+</div>
+</body>
+</html>
