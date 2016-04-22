@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Notice</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+		#div1{
+			height:50px;
+			width: 200px; 
+			margin: 10px;
+			border: 3px black solid;
+			border-radius: 10px;
+			color: white;
+			font-weight: ;
+			background: orange;
+		}
+    </style>
+
+</head>
+<body>
+<div id="container">
+<form action="">
+	<p><input type="checkbox"> auto login in two weeks</p>
+	<div id="div1">
+		请不要在网吧使用此技能<br>否则后果自负。
+	</div>
+
+</form>
+</div>
+    <script>
+    	window.onload= function() {
+    		var Oinput=document.getElementsByTagName('p')[0];
+    		// alert(typeof Oinput);
+    		var Odiv=document.getElementById("div1");
+    		Oinput.onmouseover=function(){
+    			Odiv.style.display="block";
+    		}
+    		Oinput.onmouseout=function(){
+    			Odiv.style.display="none";
+    		}
+
+    	}
+    </script>
+</body>
+</html>
