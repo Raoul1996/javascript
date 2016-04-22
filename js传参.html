@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js传参</title>
+    <style>
+        #container{
+            margin:0 auto;
+            display: block;
+        }
+        .texts{
+            /*display: block;*/
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <p class="texts"><input type="text"value="北京市"></p>
+    <p class="texts"><input type="text"value="昭阳区"></p>
+    <p class="texts">
+        <button>传参</button>
+    </p>
+</div>
+<script>
+var myFn=function (a,b) {
+   
+    alert(a.value);
+    alert(b.value);}
+
+ window.onload=function (){
+var nums=document.getElementsByTagName('input');
+var oBtn=document.getElementsByTagName('button')[0];
+oBtn.onclick= function(){
+    myFn(nums[0],nums[1]);
+}
+}
+</script>
+</body
+</html>

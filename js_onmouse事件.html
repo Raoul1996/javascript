@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>onmouse事件</title>
+    <link rel="stylesheet" href="index.css">
+	<style>
+		#div1{
+			height: 190px;
+			margin: 0 auto;
+			width: 200px;
+			background:#666666;
+			color: white;
+			text-align: center;
+			padding-top: 10px;
+			cursor: crosshair;
+		}
+		#div1:hover{
+			height: 190px;
+			margin: 0 auto;
+			width: 200px;
+			background:red;
+			color: white;
+			text-align: center;
+			padding-top: 10px;
+		}
+	</style>
+</head>
+<body>
+<div id="container">
+	<div id="div1">鼠标移入移出事件的实验</div>
+</div>
+<script >
+	window.onload = function  () {
+		var oDiv = document.getElementById("div1");
+		// alert(typeof oDiv);
+		odiv.onmouseover=function{
+			oDiv.className="hover";
+		}
+		odiv.onmouseout=function{
+			oDiv.className="";
+		}
+	}
+</script>
+</body>
+</html>
