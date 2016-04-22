@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!-- saved from url=(0062)http://pandoraui.github.io/learning-javascript/lesson1/02.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="./网页换肤_files/v4.js" charset="utf-8" id="UYScript"></script><script src="./网页换肤_files/saved_resource" charset="utf-8" id="uyan_script"></script>
+    <meta charset="utf-8">
+    <title>网页换肤</title>
+    <link rel="stylesheet" href="./网页换肤_files/green.css">
+
+    <style>
+        body,ul,li{margin:0;padding:0;}
+        html,body{height:100%;}
+        body{font:12px/1.5 Tahoma;}
+        li{list-style-type:none;}
+        a:link,a:visited{text-decoration:none;}
+        a:hover{text-decoration:underline;}
+        #outer{width:500px;margin:0 auto;overflow:hidden;zoom:1;}
+        #skin,#nav{overflow:hidden;zoom:1;}
+        #skin{margin:10px 0;}
+        #skin li{float:left;width:6px;height:6px;cursor:pointer;overflow:hidden;margin-right:10px; text-indent:-9999px;border-width:4px;border-style:solid;}
+        #skin li.current{background:#fff!important;}
+        #red{border-color:red;background:red;}
+        #green{border-color:green;background:green;}
+        #black{border-color:black;background:black;}
+        #nav{margin:0;border:1px solid #fff;}
+        #nav li{float:left;width:82px;line-height:25px;text-align:center;border-right:1px solid #fff;}
+        #nav li.last{width:83px;border-right-width:0;}
+        #nav li a{color:#fff;}
+    </style>
+    <link rel="stylesheet" href="./网页换肤_files/style.css">
+    <link rel="stylesheet" href="./网页换肤_files/prettify2.css">
+    <script id="precode">
+        window.onload = function (){
+            var oLink = document.getElementsByTagName("link")[0];
+            var oSkin = document.getElementById("skin").getElementsByTagName("li");
+
+            for(var i = 0; i< oSkin.length; i++){
+                oSkin[i].onclick = function (){
+                    for(var p in oSkin) oSkin[p].className = "";
+                    this.className = "current";
+                    oLink['href'] = this.id + ".css";
+                }
+            }
+        };
+    </script><style type="text/css"></style>
+</head>
+<body>
+<div id="outer">
+    <ul id="skin">
+        <li id="red" title="红色" class="">红</li>
+        <li id="green" class="current" title="绿色">绿</li>
+        <li id="black" title="黑色" class="">黑</li>
+    </ul>
+
+</div>
+
+<script src="./网页换肤_files/prettify.js" async="async"></script>
+<script src="./网页换肤_files/learn.js" async="async"></script>
+
+<pre id="prebox" class="prettyprint linenums">
+    <ol class="linenums">
+        <li class="L0">
+            <span class="pln">
+                window
+            </span>
+            <span class="pun">
+                .</span>
+            <span class="pln">
+                onload
+            </span>
+            <span class="pun">
+                =
+            </span>
+            <span class="pln">
+            </span>
+            <span class="kwd">
+                function
+            </span>
+            <span class="pln">
+            </span>
+            <span class="pun">
+                ()
+                {</span>
+        </li>
+        <li class="L1">
+            <span class="pln">
+            </span>
+            <span class="kwd">
+                var
+            </span>
+            <span class="pln"> oLink </span><span class="pun">=</span><span class="pln"> document</span><span class="pun">.</span><span class="pln">getElementsByTagName</span><span class="pun">(</span><span class="str">"link"</span><span class="pun">)[</span><span class="lit">0</span><span class="pun">];</span></li><li class="L2"><span class="pln">    </span><span class="kwd">var</span><span class="pln"> oSkin </span><span class="pun">=</span><span class="pln"> document</span><span class="pun">.</span><span class="pln">getElementById</span><span class="pun">(</span><span class="str">"skin"</span><span class="pun">).</span><span class="pln">getElementsByTagName</span><span class="pun">(</span><span class="str">"li"</span><span class="pun">);</span></li><li class="L3"><span class="pln">    </span></li><li class="L4"><span class="pln">    </span><span class="kwd">for</span><span class="pun">(</span><span class="kwd">var</span><span class="pln"> i </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span><span class="pln"> i</span><span class="pun">&lt;</span><span class="pln"> oSkin</span><span class="pun">.</span><span class="pln">length</span><span class="pun">;</span><span class="pln"> i</span><span class="pun">++){</span></li><li class="L5"><span class="pln">        oSkin</span><span class="pun">[</span><span class="pln">i</span><span class="pun">].</span><span class="pln">onclick </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">function</span><span class="pln"> </span><span class="pun">(){</span></li><li class="L6"><span class="pln">            </span><span class="kwd">for</span><span class="pun">(</span><span class="kwd">var</span><span class="pln"> p </span><span class="kwd">in</span><span class="pln"> oSkin</span><span class="pun">)</span><span class="pln"> oSkin</span><span class="pun">[</span><span class="pln">p</span><span class="pun">].</span><span class="pln">className </span><span class="pun">=</span><span class="pln"> </span><span class="str">""</span><span class="pun">;</span></li><li class="L7"><span class="pln">            </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">className </span><span class="pun">=</span><span class="pln"> </span><span class="str">"current"</span><span class="pun">;</span></li><li class="L8"><span class="pln">            oLink</span><span class="pun">[</span><span class="str">'href'</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">id </span><span class="pun">+</span><span class="pln"> </span><span class="str">".css"</span><span class="pun">;</span></li><li class="L9"><span class="pln">        </span><span class="pun">}</span><span class="pln">   </span></li><li class="L0"><span class="pln">    </span><span class="pun">}</span></li><li class="L1"><span class="pun">};</span></li></ol></pre><script src="./网页换肤_files/jquery-1.8.3.min.js"></script><div id="uyan_frame"><iframe id="uyan_ifr_1330634" scrolling="no" frameborder="0" src="./网页换肤_files/saved_resource.html" style="height: 583px; display: block !important; width: 100% !important; border: 0px none !important; overflow: hidden !important;"></iframe></div><script src="./网页换肤_files/iframe.js" id="UYScript" async=""></script></body></html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>to change the background-color by myself</title>
+    <style>
+        #skin{
+            margin: 10px 0;
+        }
+        #container{
+            width: 800px;
+            height: 800px;
+            margin: 0 auto;
+            background: #FF1490;
+        }
+        #skin li{
+            float: left;
+            width: 16px;
+            height: 16px;
+            margin: 10px;
+            cursor: pointer;
+            overflow: hidden;
+            text-align: center;
+            border: white solid;
+        }
+        /*#skin li.current{*/
+            /*background: #666666;*/
+        /*!important;*/
+        /*}*/
+        #red{
+            border-color: red;
+            background: red;
+        }
+        #green{
+            border-color: green;
+            background: green;
+        }
+        #black {
+            border-color: black;
+            background-color: black;
+        }
+    </style>
+
+</head>
+<body>
+<div id="container">
+    <div id="control">
+        <ol id="skin">
+          <a href="green" id="green" class=""  onclick="changes(this)">afdssdaffdsa</a>
+            <li id="black" class="" onclick="changes(this)"></li>
+            <li id="red" class="" onclick="change(this)"></li>
+        </ol>
+    </div>
+</div>
+<script>
+    function changes (colo) {
+        var clod=colo.getAttribute("herf");
+        var cols=document.getElementById("container");
+        cols.setAttribute("style.background",cols);
+        alert(cols.setAttribute("style.background",cols));
+        var ccol = document.getElementById("container").style.background="green";
+
+//        alert(colorw);
+    }
+
+</script>
+</body>
+</html>

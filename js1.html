@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>原生js1</title>
+    <style>
+        #div1{
+            height: 100px;
+            width: 100px;
+            background: greenyellow;
+            margin: 10px auto;
+            display: block;
+        }
+        #main{
+           width: 500px;
+            margin: 0 auto;
+            padding: 0;
+            text-align: center;
+        }
+    </style>
+    <script>
+        var changestyle=function (elem,attr,value) {
+            //elem 某个位置  attr 对应的样式名称  value要改变的值
+            elem.style[attr]=value;
+        }
+        //window.onload:页面加载的时候可以调用某些函数
+        window.onload=function(){
+            //getElementsByTagName() 方法可返回带有指定标签名的对象的集合
+            //getElementById() 方法可返回对拥有指定 ID 的第一个对象的引用,通过元素的ID特性来获取元素
+            // document.getElementsByTagName 获取的是一个数组
+            var oBtn=document.getElementById("main").getElementsByTagName("input");
+            var oDiv=document.getElementById("div1");
+            var oAtt=["width","height","background","display","dispaly"];
+            var oVal=["200px","200px","blue","none","block"];
+
+            for (var i=0;i<oBtn.length;i++){
+                oBtn[i].index=i;
+                oBtn[i].onclick=function () {
+                    //this.index：获取目前对象的index属性
+                    //this.index == oBtn.length-1   一个整体    index是否等于oBtn的长度
+                    //(oDiv.style.cssText = "")  一个整体   样式名称是否空
+                    this.index==oBtn.length-1&&(oDiv.style.cssText="")
+                    {
+                        //上面是不是一个判断条件，当符合了上一行的条件的时候，执行function changestyle，否则不执行？
+                        //只是一个很大的问题。
+                        /*
+                    ==表示判断是否相等，&&表示逻辑与。
+                    待求证。
+                    这个for循环是否起着遍历数组的作用呢？
+                    */
+                    changestyle(
+                            oDiv,oAtt[this.index],oVal[this.index]);
+                        };
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+<div id="container">
+    <div id="main">
+        <input type="button" value="wider">
+        <input type="button" value="heigher">
+        <input type="button" value="color">
+        <input type="button" value="hide">
+        <input type="button" value="reset">
+        <div id="div1"></div>
+    </div>
+</div>
+
+</body>
+</html>
