@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>img模糊度调整</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+		#outer>div{
+			float: left;
+			margin: 10px;
+			opacity:0.3;
+    		/*设置元素的不透明度 IE专用滤镜*/
+    		filter:alpha(opacity=30);
+		}
+		#outer .current{
+			float: left;
+			margin: 10px;
+			opacity:1;
+    		/*设置元素的不透明度 IE*/
+    		filter:alpha(opacity=100);
+		}
+
+
+    </style>
+</head>
+<body>
+<div id="container">
+<div id="outer">
+	<div class=""><img src="images/js1.jpg" alt=""></div>
+	<div><img src="images/js1.jpg" alt=""></div>
+	<div><img src="images/js1.jpg" alt=""></div>
+	<div><img src="images/js1.jpg" alt=""></div>
+	<div><img src="images/js1.jpg" alt=""></div>
+	<div><img src="images/js1.jpg" alt=""></div>
+	<div><img src="images/js1.jpg" alt=""></div>
+	<div><img src="images/js1.jpg" alt=""></div>
+	<div><img src="images/js1.jpg" alt=""></div>
+	<div><img src="images/js1.jpg" alt=""></div>
+	<div><img src="images/js1.jpg" alt=""></div>
+	<div><img src="images/js1.jpg" alt=""></div>
+</div>
+</div>
+<script>
+	var oDiv=document.getElementById('outer').getElementsByTagName('div');
+	console.log(oDiv);
+	for (var i = oDiv.length - 1; i >= 0; i--) {
+		oDiv[i].onmouseover=function() {
+			this.className ="current";
+		}
+		oDiv[i].onmouseout=function(){
+			this.className ="";
+		}
+	};
+</script>
+</body>
+</html>

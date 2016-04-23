@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js_calenada</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+	h2 p strong div{margin: 0;padding: 0;}
+    #outer{
+    	margin: 0 auto;
+    }
+    #outer ul {
+    	width: 250px;
+    	display: block;
+    	/*border: 3px #000 solid;*/
+    	margin: 0 auto;
+
+    }
+    #outer li{
+
+    	height: 40px;
+    	width: 40px;
+    	margin: 10px;
+    	background: #555;
+    	color: #fff;
+    	float: left;
+    	list-style-type: none;
+    	font-size: 14px;
+    	text-align: center;
+    	cursor: pointer;
+    }   
+    #outer .current{
+    	height: 40px;
+    	width: 40px;
+    	margin: 10px;
+    	background: #fff;
+    	color: #555;
+    	float: left;
+    	list-style-type: none;
+    	font-size: 14px;
+    	text-align: center;
+    	cursor: pointer;
+    }
+    li strong{
+    	display: block;
+    	font-size: 18px;
+    	text-align: center;
+    }
+	#msg{ 
+		display: block;
+		height: 90px;
+		width: 200px;
+		margin: 0 auto;
+		border: 1px solid black;
+		padding: 0px;
+		padding: 5px;
+	}
+
+    </style>
+</head>
+<body>
+<div id="container">
+	<div id="outer">
+		<ul>
+	    <li class="current"><strong>1</strong>JAN</li>
+        <li><strong>2</strong>FER</li>
+        <li><strong>3</strong>MAR</li>
+        <li><strong>4</strong>APR</li>
+        <li><strong>5</strong>MAY</li>
+        <li><strong>6</strong>JUN</li>
+        <li><strong>7</strong>JUL</li>
+        <li><strong>8</strong>AUG</li>
+        <li><strong>9</strong>SEP</li>
+        <li><strong>10</strong>OCT</li>
+        <li><strong>11</strong>NOV</li>
+        <li><strong>12</strong>DEC</li>
+		</ul>
+		<div class="clr"></div>
+		<div id="msg">
+			<h2 style="margin:0px;"><strong>1</strong>月节日</h2>
+			<p></p>
+		</div>
+	</div>
+
+</div>
+<script>
+	window.onload=function(){
+	var oLi=document.getElementsByTagName('li');
+	var oMsg=document.getElementById('msg');
+	var oP=document.getElementById('msg').getElementsByTagName('p')[0];
+	var oS=document.getElementById('msg').getElementsByTagName("strong")[0];
+	var oArray=[
+	 	"元旦：1月1日至3日放假三天。",
+        "春节：2月2日至8日放假7天。",
+        "妇女节：3月8日妇女节，与我无关。",
+        "清明节：4月3日至5日放假3天",
+        "劳动节：4月30日至5月2日放假3天。",
+        "端午节：6月4日至6日放假3天。",
+        "小暑：7月7日小暑。不放假。",
+        "七夕节：8月6日七夕节。不放假。",
+        "中秋节：9月10日至12日放假3天。",
+        "国庆节：10月1日至7日放假7天。",
+        "立冬：11月8日立冬。不放假。",
+        "艾滋病日:12月1日<br /> 废除奴隶制国际日:12月2日。"
+	];
+	for (var i = oLi.length - 1; i >= 0; i--){
+		oLi[i].index=i;
+		oLi[i].onmouseover=function(){
+			for (var n = 0; n < oLi.length; n++) oLi[n].className="";
+				this.className="current";
+			oP.innerHTML=oArray[this.index];
+			oS.innerHTML=this.index+1;
+
+		}
+	}
+	}
+</script>
+</body>
+</html>

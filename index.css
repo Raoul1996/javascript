@@ -4,3 +4,9 @@
 		margin: 0 auto;
 		background: #EEEEEE;
 	}
+	.clr{
+		height: 0px;
+		width: 0px;
+		overflow: hidden;
+		clear: both;
+	}

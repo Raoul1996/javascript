@@ -2,19 +2,60 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>change_element</title>
     <link rel="stylesheet" href="index.css">
     <style>
 
+	#div1{
+		width: 200px;
+		height: 200px;
+		margin: 0 auto;
+		background: #949499;
+		border: 6px white solid;
+		padding: 10px;
+		border-radius: 113px;
+		line-height: 200px;
+		text-align: center;
+	}
+	div>p{
+		text-align: center;
+	}
 
     </style>
 </head>
 <body>
 <div id="container">
-
+	<div id="outer">
+		<p>属性名：<input type="text" value="background"></p>
+		<p>属性值：<input type="text"></p>
+		<p>
+			<button>确定</button>
+			<button>重置</button>
+		</p>
+	</div>
+<div id="div1">
+	改变想要的属性
+</div>
 </div>
 <script>
-	
+	function changeStyle (elem,name,value) {
+		elem.style[name]=value;
+	}
+	window.onload=function(){
+		var oInput1=document.getElementsByTagName('input')[0];
+		var oInput2=document.getElementsByTagName('input')[1];
+		var oBun1=document.getElementsByTagName('button')[0];
+		var oBun2=document.getElementsByTagName('button')[1];
+		var oDiv=document.getElementById('div1');
+		console.log(oInput1);
+		console.log(oInput2);
+		oBun1.onclick=function(){
+			changeStyle(oDiv,oInput1.value,oInput2.value);
+		}
+		oBun2.onclick=function(){
+			oDiv.removeAttribute('style');
+		}
+	}
 </script>
 </body>
 </html>

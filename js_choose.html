@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js_choose</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+	#outer{
+		width: 600px;
+		height: 35px;
+		background: #000;
+		margin: 0 auto;
+
+		color: #fff;
+		border: 1px black solid;
+		border-bottom: 0px;
+	}
+	#con{
+		width: 600px;
+		height: 200px;
+		background: #ddd;
+		margin: 0 auto;
+		border: 1px black solid;
+		border-top: 1px #eee solid;
+	}
+	#outer ol{
+		padding: 0px;
+		margin: 0px;
+	}
+	#outer li{
+		display: block;
+		float: left;
+		margin: 0px;
+		width: 60px;
+		height: 35px;
+		text-align: center;
+		line-height: 35px;
+		cursor: pointer;
+	}
+	#outer .current{
+		color: #000;
+		background: #eee;
+		display: block;
+		float: left;
+		margin: 0px;
+		width: 60px;
+		height: 35px;
+		text-align: center;
+		line-height: 35px;
+		cursor: pointer;
+	}
+
+    </style>
+</head>
+<body>
+
+<div id="container">
+	<div id="z" style="height:100px;"></div>
+<div id="outer">
+	<ol>
+		<li>第一课</li>
+		<li>第二课</li>
+		<li>第三课</li>
+	</ol>
+</div>
+<div id="con">
+	<ol style="display:block;">
+		<li>第一课</li>
+		<li>第一课</li>
+		<li>第一课</li>
+		<li>第一课</li>
+		<li>第一课</li>
+		<li>第一课</li>
+		<li>第一课</li>
+		<li>第一课</li>
+		<li>第一课</li>
+
+
+	</ol>
+	<ol style="display:none;">
+		<li>第二课</li>
+		<li>第二课</li>
+		<li>第二课</li>
+		<li>第二课</li>
+		<li>第二课</li>
+		<li>第二课</li>
+		<li>第二课</li>
+		<li>第二课</li>
+		<li>第二课</li>
+	</ol>
+	<ol style="display:none;">
+		<li>第三课</li>
+		<li>第三课</li>
+		<li>第三课</li>
+		<li>第三课</li>
+		<li>第三课</li>
+		<li>第三课</li>
+		<li>第三课</li>
+		<li>第三课</li>
+		<li>第三课</li>
+
+	</ol>
+</div>
+</div>
+<script>
+	window.onload=function () {
+		var oLi=document.getElementById('outer').getElementsByTagName('li');
+		var oOl=document.getElementById('con').getElementsByTagName('ol');
+		for (var i = oLi.length - 1; i >= 0; i--) {
+			oLi[i].index=i;
+			oLi[i].onmouseover=function(){
+				for (var n = oLi.length - 1; n >= 0; n--) oLi[n].className="";
+					this.className="current";
+				for (var n = oOl.length - 1; n >= 0; n--) oOl[n].style.display="none";
+					oOl[this.index].style.display="block";
+
+
+			}
+		};
+		
+	}
+</script>
+</body>
+</html>

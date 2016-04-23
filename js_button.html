@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>单一按钮显示隐藏</title>
+    <style>
+    body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,img {padding:0;margin:0;}
+    #container{
+        margin: 0 auto;
+        width: 300px;
+        height: 40px;
+    }
+    #ci{
+    	margin: 0 auto;
+    	width: 300px;
+    	height: 40px;
+    	background: #ccc;
+    	/*text-align: center;*/
+    	/*padding-left: 10px;*/
+    	font-size: 24px;
+    	line-height: 40px;
+    	border-radius: 5px;
+
+    }
+    #div1{
+    	height: 0px;
+    	width: 0px;
+    	float: right;
+    	margin: 15px;
+    	border: 10px #ccc solid;
+    	border-top-color: #444;
+    	cursor: pointer;
+    }
+    #container ol{
+        border: 1px solid black;
+    }
+    #container li{
+        list-style-type: none;
+
+    }
+
+    #container a{
+    	display: block;
+    	/*margin: 0 auto;*/
+    	border: 1px solid black;
+        text-align: center;
+    	font-size: 18px;
+    	margin: 0px;
+
+    }
+    li a:link{
+    	text-decoration: none;
+    	color: #ffffff;
+    	background: #888888;
+    	margin: 0px;
+    }
+    li a:hover{
+    	text-decoration:underline;
+    	color: #000;
+    	background: #fff;
+    }
+
+
+    </style>
+</head>
+<body>
+<div id="container">
+	<div id="ci">播放列表<div id="div1"></div></div>
+
+<ul>
+	<li ><a href="#" onclick="return false">As long as you love me </a></li>
+	<li ><a href="#" onclick="return false">buring</a></li>
+</ul>
+</div>
+<script>
+	window.onload=function(){
+		var oDiv=document.getElementById('div1');
+		var oUl=document.getElementsByTagName('ul')[0];
+        var oLi=document.getElementsByTagName('li');
+        console.log(oDiv);
+        console.log(oLi);
+
+		oDiv.onclick=function(){
+			var style=oUl.style;
+		      style.display=style.display=="none"?"block":"none";
+            }
+        for (var i = 0; i < oLi.length; i++) {
+            oLi[i].index=i;
+            oLi[i].onmouseover=function(){
+                for (var n = oLi.length - 1; n >= 0; n--) oLi[n].style.background="#ccc";
+                    oLi[this.index].style.background="#fff";
+            }
+        };
+		}
+</script>
+</body>
+</html>
