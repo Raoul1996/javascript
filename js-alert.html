@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js_alert</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+    	a:link{
+    		text-decoration: none;   		
+    	}
+		#button{
+			display: block;
+			width: 100px;
+			height: 30px;
+			margin: 0 auto;
+			font-weight:900
+		}
+		div div{
+			width: 70px;
+			height: 27px;
+			border: 1px yellowgreen solid;
+			margin: 0 auto;
+			color: blue;
+			text-align: center;
+		}
+    </style>
+</head>
+<body>
+<div id="container" style="boder 1px;">
+	<input type="button" id="button" value="输 入 法" >
+	<div id="div4">
+		<div id="div1">
+		<a href="#">手写</a>
+	</div>
+	<div id="div2"><a href="#">拼音</a></div>
+	<div id="div3"><a href="#">返回</a></div>
+	</div>
+</div>
+<script >
+	window.onload=function(){
+		var oBun=document.getElementsByTagName('input')[0];
+		var oDiv1=document.getElementById('div1');
+		var oDiv2=document.getElementById('div2');
+		var oDiv3=document.getElementById('div3');
+		var oDiv4=document.getElementById('div4');
+		var style=oDiv4.style;
+		oBun.onclick=function(){
+			if (style.display=="block") {
+				style.display="none";
+			}else{
+				style.display="block";
+			}
+			oDiv3.onclick=function(){
+				style.display="none";
+			}
+		}
+	}
+</script>
+</body>
+</html>

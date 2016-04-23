@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sum</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+    	#container{
+		height: 600px;
+		width: 900px;
+		margin: 0 auto;
+		background: #EEEEEE;
+	}
+		#outer{
+			margin-left: 300px;
+		}
+		div input{
+			height: 30px;
+			text-align: center;
+			border-radius: 30px;
+		}
+		h1{
+			display: block;
+		}
+    </style>
+</head>
+<body>
+<div id="container">
+	<div id="outer">
+	<input type="text" value="">
+	<button >sum</button>
+	<br>
+	输入数字求和，请用英文半角逗号分隔开。
+	<h1 id="sum"></h1>
+</div>
+</div>
+<script >
+	window.onload=function(){
+	alert("一定要用英文半角逗号分隔哦。");
+	alert("我很幽默哦")
+
+		var num=document.getElementById('outer').getElementsByTagName('input')[0];
+		var oBun=document.getElementsByTagName("button")[0];
+		var sum=document.getElementsByTagName('h1')[0];
+		//放弃加入正则替换。
+//出现nan错误。原因：数据类型可能不一致。解决办法：在声明var tot=0;
+oBun.onclick=function(){
+	 var tot=0;
+	var nums=document.getElementById('outer').getElementsByTagName('input')[0].value.split(",");
+	if (nums==0) 
+		{	
+			alert("请输入数字")
+			return false;}
+		for(var i in nums){	
+			var tot= tot + parseInt(nums[i]);
+	}
+	console.log(tot);
+	alert("想知道是几吗？");
+	alert("要不要告诉你呢？");
+	alert("说宝宝很可爱*^_^*");
+	alert("说宝宝爱你么么哒(^з^)");
+	alert("不说？那算了。。。。。")
+	alert("你想禁用JavaScript？");
+	alert("还是不要了≥﹏≤");
+	alert("如果你禁用了js就看不到计算结果了呢。");
+	alert("马上就到了揭晓结果的时刻了");
+	alert("其实你可以在刚开始的时候用console直接看到结果的。。。");
+	alert("不知道console怎么用？");
+	alert("说宝宝爱你么么哒我就教你");
+	alert("算了，不玩了。按一下F12啦");
+	sum.innerHTML=tot;
+	}
+}
+</script>
+</body>
+</html>
