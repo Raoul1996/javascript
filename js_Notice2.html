@@ -2,19 +2,94 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
-    <link rel="stylesheet" href="index.css">
+    <title>提示框效果——车标展示</title>
+    <!-- <link rel="stylesheet" href="index.css"> -->
     <style>
+    body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,img {padding:0;margin:0;}
 
+    body{
+    	background: #eee;
+    }
+    a:link{
+    	text-decoration: none;
+    	color: black;
+    }
+    #container{
+    	height: 460px;
+    	width: 470px;
+    	margin: 0 auto;
+    }
+    #outer li{
+    	position: relative;
+    	height: 110px;
+    	width: 110px;
+    	border: #aaa;
+    	float: left;
+    	margin: 10px;
+    	padding: 10px;
+    	border: 1px solid #fff;
+    	list-style-type: none;
+    	text-align: center;
+    	cursor: crosshair;
+    }
+    #outer strong{
+    	display: block;
+    }
+    #outer img{
+    	display: none;
+    	position: absolute;
+    	z-index: 10020;
+    	top: 1px;
+    	left: 1px;
+    }
+    #con h2{ 
+    	text-align: center;
 
+    }
     </style>
 </head>
 <body>
 <div id="container">
+<div id="con">
+	<h2>名车车标展示-鼠标移过显示车标</h2>
+<div id="outer">
+	<ul>
+		<div><li><a href="#"  onclick="return flase" title="宝马汽车"><strong>BMW</strong>宝马汽车</a><img id="ls"src="images/js1.jpg" alt=""></li></div>
+		<div><li><a href="#"  onclick="return flase" title="宝马汽车"><strong>BMW</strong>宝马汽车</a><img id="ls"src="images/js1.jpg" alt=""></li></div>
+		<div><li><a href="#"  onclick="return flase" title="宝马汽车"><strong>BMW</strong>宝马汽车</a><img id="ls"src="images/js1.jpg" alt=""></li></div>
+		<div><li><a href="#"  onclick="return flase" title="宝马汽车"><strong>BMW</strong>宝马汽车</a><img id="ls"src="images/js1.jpg" alt=""></li></div>
+		<div><li><a href="#"  onclick="return flase" title="宝马汽车"><strong>BMW</strong>宝马汽车</a><img id="ls"src="images/js1.jpg" alt=""></li></div>
+		<div><li><a href="#"  onclick="return flase" title="宝马汽车"><strong>BMW</strong>宝马汽车</a><img id="ls"src="images/js1.jpg" alt=""></li></div>
 
+
+	</ul>
+</div>
+</div>
 </div>
 <script>
-	
+	window.onload=function(){
+		var oLi=document.getElementsByTagName('li');
+		var oA=document.getElementsByTagName('a');
+		var oImg=document.getElementsByTagName('img');
+		var oDiv=document.getElementById('outer').getElementsByTagName('div')
+		for (var i = oDiv.length - 1; i >= 0; i--) {
+			oDiv[i].index=i;
+			oDiv[i].onmouseover=function(){
+				for (var n = oImg.length - 1; n >= 0; n--)
+					var style=oImg[this.index].style;
+					style.display='block';
+			}
+		}
+			for (var q = oDiv.length - 1; q >= 0; q--) {
+			oDiv[q].index=q;
+			oDiv[q].onmouseout=function(){
+				for (var w = oImg.length - 1; w >= 0; w--)
+					var style=oImg[this.index].style;
+					style.display='none';
+				}
+				//放弃在一个function中进行onmouseover和onmouseout事件的处理，因为这样做有可能会让鼠标定位不准。
+}
+}
 </script>
 </body>
 </html>
