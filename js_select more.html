@@ -11,15 +11,44 @@
 </head>
 <body>
 <div id="container">
-<form action=""><select name="" id="">
+<form id="picker" action=""><select name="" id="state">
 		<option value="">--</option>
-		<option value="WA">Missouri</option>
-		<option value="CA">Washington</option>
-		  <option value="MO">California</option>
-	</select></form>
+		<option value="MO">Missouri</option>
+		<option value="WA">Washington</option>
+		  <option value="CA">California</option>
+	</select>
+	<select name="" id="cities"></select>
+</form>
 </div>
 <script>
-	
+	var citystore = new Array();
+	citystore[0] = ['CA','San Francisco'];
+	citystore[1] = ['CA','Los Angeles'];
+	citystore[2] = ['CA','San Diego'];
+	citystore[3] = ['MO','St. Louis'];
+	citystore[4] = ['MO','Kansas City'];
+	citystore[5] = ['WA','Seattle'];
+	citystore[6] = ['WA','Spokane'];
+	citystore[7] = ['WA','Redmond'];
+	window.onload=function () {
+		document.getElementById('state').onchange=filterCities;
+	}
+	function filterCities(){
+		var state= this.value;
+		var city=document.getElementById("cities");
+		city.options.length=0;
+		for (var i = citystore.length - 1; i >= 0; i--) {
+			var st =citystore[i][0];
+			if (st==state) {
+				var opt=new Option(citystore[i][1]);
+				try{
+					city.add(opt,null);
+				}catch(e){
+					city.add(opt);
+				}
+			};
+		};
+	}
 </script>
 </body>
 </html>
