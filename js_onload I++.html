@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <!-- <link rel="stylesheet" href="index.css"> -->
+    <style>
+p{
+	font-size: 100px;
+	position: absolute;
+	left: 45%;
+}
+
+    </style>
+</head>
+<body>
+<div id="container">
+<p></p>
+</div>
+<script>
+	window.onload=function() {
+		var oP=document.getElementsByTagName('p')[0];
+		var i=0;
+		setInterval(updateNum,1000);
+		updateNum();
+		function updateNum(){
+			oP.innerHTML=++i;
+		}
+		}
+	
+</script>
+</body>
+</html>

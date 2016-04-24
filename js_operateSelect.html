@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js_操作select标签</title>
+    <!-- <link rel="stylesheet" href="index.css"> -->
+    <style>
+    body{
+    	background: #ddd;
+    }
+	#outer{
+		height: 300px;
+		width: 350px;
+		margin: 10px auto;
+		border: 1px #555 dotted;
+		text-align: left;
+		border-radius: 30px;
+		padding: 10px;
+	}
+	#outer h4{
+		text-align: center;
+
+
+
+	}
+	#outer button{
+		text-align: right;
+	}
+	#title{
+		width: 200px;
+		height: 30px;
+		margin: 10px auto;
+		border-bottom: 1px solid #555;
+	}
+	#select{
+		width: 150px;
+		height: 20px;
+	}
+	#mul{
+		margin-top: 10px;
+		margin-bottom: 20px;
+	}
+
+    </style>
+</head>
+<body>
+<div id="container">
+<div id="outer">
+	<div id="title"><h4>操作select标签</h4></div>
+	<div id="se">
+		<select name="" id="select">
+			<option value="">请选择城市</option>
+			<option value="北京">北京</option>
+			<option value="天津">天津</option>
+			<option value="河北">河北</option>
+		</select>
+		<button>获取选中项</button><button>重置选中项</button>
+	</div>
+		<div style="margin-top:10px;">更多操作<strong>在这里</strong></div>
+	<div id="mul">
+		<select multiple="multiple" size="4" id="mult">
+			<option value="reading">读书</option>
+			<option value="singing">唱歌</option>
+			<option value="dancing">跳舞</option>
+		</select>
+		<button>获取选中项</button><button>重置选中项</button>
+		<button>全选</button><button>反选</button>
+
+	</div>
+	<div id="se">
+		<button onclick="check('mult')">输出</button><input type="text" id="output">
+	</div>
+</div>
+</div>
+<script>
+	window.onload=function(){
+		var select=document.getElementById('select');
+		var oOption=document.getElementById('select').getElementsByTagName('option');
+		var oBun=document.getElementsByTagName('button');
+		oBun[0].onclick=function(){
+
+			var selectIndex=select.selectedIndex;
+			var selectText=select.options[selectIndex].text;
+			var selectValue=select.options[selectIndex].value;
+			console.log(selectIndex);
+			console.log(typeof selectIndex);
+			console.log(selectText);
+			console.log(selectValue);
+			if (selectIndex==0) {
+				alert("你还没选择城市");
+			}else{
+			alert("你选择的是"+selectValue+"，你确定吗？");
+			alert("你想要改动吗？");
+			alert("真的不要改动了吗？");
+			alert("ARE YOU SURE？");
+			alert("最后一次，改不改？");
+			alert("你想要改了是吗。");
+			alert("别傻了》》");
+			alert("你难道么有发现这一直都是alert吗？");
+			alert("你咋能改呢？");
+		}
+		oBun[1].onclick=function(){
+			select.value="";
+		}
+		var mult=document.getElementById('mult');
+		var oTips=document.getElementById('mult').getElementsByTagName('option');
+		oBun[2].onclick=function(){
+			var mValue="";
+			for (var i = oTips.length - 1; i >= 0; i--) {
+				if (oTips[i].selected) {
+					mValue= mValue+oTips[i].value;
+				};
+			};
+			alert(mValue);
+			//为啥我的需要先点击一下oBun[0]呢？
+		}
+		oBun[3].onclick=function(){
+			for (var i = oTips.length - 1; i >= 0; i--) {
+					oTips[i].selected=false;
+			};
+		}
+		oBun[4].onclick=function(){
+			for (var i = oTips.length - 1; i >= 0; i--) {
+				if (oTips[i].value !="") {
+					oTips[i].selected=true;
+			};
+			};
+		}
+		oBun[5].onclick=function(){
+			for (var i = oTips.length - 1; i >= 0; i--) {
+				if (oTips[i].value !="") {
+					oTips[i].selected==true ? oTips[i].selected=false : oTips[i].selected=true;
+			};
+			};
+		}
+
+
+		}
+
+	}
+	function check(ob){
+		o=document.getElementById(ob);
+		t=document.getElementById("output");
+		var intop="";
+		for (var i = o.options.length - 1; i >= 0; i--) {
+			if(o.options[i].selected){
+				intop+=o.options[i].value+",";
+			}
+		};
+		t.value=intop.substr(0,intop.length-1);
+	}
+</script>
+</body>
+</html>

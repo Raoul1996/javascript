@@ -10,6 +10,8 @@
 		width: 200px;
 		margin: 0 auto;
 		border: 1px solid black;
+		border-radius: 5px;
+		font-size: 700;
 	}
 	#outer p{
 		/*display: inline-block;*/
@@ -57,6 +59,8 @@ window.onload=function  () {
 	var oLabel=document.getElementById('div1').getElementsByTagName('label')[0];
 	var oInput=document.getElementById('div2').getElementsByTagName('input');
 	var isCheckedAll=function(){
+		//注意局部变量，请不要污染全局。
+		//否则后果很严重....................
 	    var a=0;
 		for (var n = 0; n < oInput.length; n++) {
 			oInput[n].checked && a++;

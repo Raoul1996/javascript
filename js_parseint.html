@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>parseint&sum</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+    #outer input{
+    	width: 30px;
+    }
+    #outer #output{
+       	width: 100px;
+    }
+
+
+    </style>
+</head>
+<body>
+<div id="container">
+<div id="outer">
+	<input type="text">
+	<span>+</span>
+	<input type="text">
+	<span>=</span>
+	<input type="text" id="output">
+	<p><button>计算</button></p>
+</div>
+</div>
+<script>
+	window.onload=function () {
+		var oInput=document.getElementById('outer').getElementsByTagName('input')
+		var oOutput=document.getElementById("output");
+		var oBun=document.getElementsByTagName("button")[0];
+		oBun.onclick=function(){
+			if(oInput[0].value==""||oInput[1].value==""){
+				alert("请输入数字");
+			}
+			oOutput.value=parseInt(oInput[0].value)+parseInt(oInput[1].value);
+		}
+	}
+</script>
+</body>
+</html>

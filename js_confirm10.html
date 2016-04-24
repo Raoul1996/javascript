@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>判断是否两位数</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+
+
+    </style>
+</head>
+<body>
+<div id="container">
+<input type="text"><input type="button" value="是否两位数">
+</div>
+<script>
+	window.onload=function(){
+		var oInput=document.getElementsByTagName('input');
+		var i=0;
+
+		oInput[1].onclick=function(){
+			if(oInput[0].value==""){
+				alert("输入数字好吗？");	
+			}
+			var n =parseInt(oInput[0].value);
+			if (n>=10&&n<100) {
+				alert("这是一个两位数");
+			}else alert("这是不是两位数");
+	}
+}
+</script>
+</body>
+</html>
