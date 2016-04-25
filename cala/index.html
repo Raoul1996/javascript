@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>网页计算器</title>
+    <link rel="stylesheet" href="css/chushihua.css">
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+    #clac{
+    	height: 420px;
+    	width: 300px;
+    	margin: 20px auto;
+    	border: 1px solid #222;
+    	background: #bbb;
+    	border-radius: 5px;
+    }
+    #header{
+    	height: 22px;
+    	width: 290px;
+    	background: #222;
+    	color: #eee;
+    	text-align: right;
+    	font-size: 12px;
+    	line-height: 22px;
+    	padding-right: 10px;
+    }
+    #input{
+    	height: 83px;
+    	width: 287px;
+    	padding: 0 5px;
+    	background: url(img/inputBg.jpg);
+    	text-align: right;
+    }
+    #face{
+    	height: 290px;
+    	width: 292px;
+    	padding-left: 8px;
+    	padding-bottom: 17px;
+    	background: #aaa;
+    }
+    #face li{
+    	height: 41px;
+    	width: 63px;
+    	margin: 10px 10px 0 0;
+    	background: #888;
+    	float: left;
+    }
+    
+    #face #tw{
+    	height: 136px;
+    	position: relative;
+
+    
+    }
+
+
+    </style>
+</head>
+<body>
+<div id="container">
+	<div id="clac">
+		<div id="header"><span>Powered by Raoul QQ:1259510125</span></div>
+		<div id="output" >
+			<input type="text" id="input" class="output">
+		</div>
+		<div id="main">
+			<ul id="face">
+				<li class="btn"></li>
+				<li class="btn"></li>
+				<li class="btn"></li>
+				<li class="btn"></li>
+				<li class="btn"></li>
+				<li class="btn"></li>
+				<li class="btn"></li>
+				<li class="btn"></li>
+				<li class="btn"></li>
+				<li class="btn"></li>
+				<li class="btn"></li>
+				<li class="btn"></li>
+				<div id="clr"></div>
+				<div>
+					<li class="btn"></li>
+					<li class="btn"></li>
+					<li class="btn"></li>
+					<li class="btn"></li>
+					<li class="btn"></li>
+					<li class="btn"></li>
+				</div>
+					<li class="btn" id="tw"></li>
+
+			</ul>
+		</div>
+	</div>
+
+</div>
+<script src="js/index.js"></script>
+</body>
+</html>
