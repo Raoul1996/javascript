@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js_webclock</title>
+    <style>
+        #clock{
+            border: 2px #334344 solid;
+            color: #444;
+            width: 200px;
+            height: 50px;
+            line-height: 50px;
+            margin: 50px auto;
+        }
+        #clock span{
+            display:inline-block;
+            width:22%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div id="clock">
+    <span></span>时
+    <span></span>分
+    <span></span>秒
+</div>
+<script>
+    window.onload=function () {
+        var oClock=document.getElementById("clock");
+        var oSpan=oClock.getElementsByTagName("span");
+        setInterval(getTimes,1000);
+        getTimes();
+        function getTimes() {
+            var oDate = new Date();
+            var aDate = [oDate.getHours(),oDate.getMinutes(),oDate.getSeconds()];
+            for(var i in aDate) {
+                oSpan[i].innerHTML =fomat(aDate[i]);
+            }
+            function fomat(a) {
+                return a.toString().replace(/^(\d)$/, "0$1");
+            }
+//            增加前导0.
+        }
+
+
+    }
+</script>
+</body>
+</html>
