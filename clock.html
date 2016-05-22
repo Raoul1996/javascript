@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>last second</title>
+    <style>
+        @media screen and (min-width:600px) {
+            #countdown{
+                width: 25%;
+                border: 2px #334344 solid;
+                color: #444;
+                height: 50px;
+                line-height: 50px;
+                margin: 50px auto;
+            }
+            #countdown span {
+                display: inline-block;
+                width: 22%;
+                text-align: center;
+            }
+        }
+
+        @media screen and (max-width:599px) {
+
+            #countdown{
+                border: 2px #334344 solid;
+                color: #444;
+                width: 200px;
+                height: 50px;
+                line-height: 50px;
+                margin: 50px auto;
+            }
+
+            #countdown span {
+                display: inline-block;
+                width: 22%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+<div id="countdown">
+    <span>1</span>分
+    <span>40</span>秒
+    <input type="button" value="" class="">
+</div>
+<script>
+    window.onload = function () {
+        var oClick = document.getElementById("countdown");
+        var aInput = document.getElementById("countdown").getElementsByTagName("input")[0];
+//        var oSpan = document.getElementById("clock").getElementsByTagName("span");
+        var timer = null;
+
+
+        aInput.onclick = function () {
+
+            this.className = "" ? (timer = setInterval(updateTime, 1000), updateTime()) : (clearInterval(timer));
+            this.className = this.className == '' ? "cancel" : '';
+        };
+        function format(a) {
+            return a.toString().replace(/^(\d)$/, '0$1')
+        }
+alert("fghjkl");
+        function updateTime() {
+                var aSpan = document.getElementById("countdown").getElementsByTagName("span");
+                var oRemain = parseInt(aSpan[0].innerHTML.replace(/^0/, '') )* 60 + parseInt(aSpan[1].innerHTML.replace(/^0/, ''));
+                if (oRemain <= 0) {
+                    clearInterval(timer);
+                    return;
+                }
+                oRemain--;
+                aSpan[0].innerHTML = format(parseInt(oRemain / 60));
+                oRemain %= 60;
+                aSpan[1].innerHTML = format(parseInt(oRemain));
+        }
+    }
+</script>
+</body>
+</html>
