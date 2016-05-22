@@ -49,13 +49,12 @@
     window.onload = function () {
         var oClick = document.getElementById("countdown");
         var aInput = document.getElementById("countdown").getElementsByTagName("input")[0];
-//        var oSpan = document.getElementById("clock").getElementsByTagName("span");
         var timer = null;
 
 
         aInput.onclick = function () {
 
-            this.className = "" ? (timer = setInterval(updateTime, 1000), updateTime()) : (clearInterval(timer));
+            this.className == "" ? (timer = setInterval(updateTime, 1000), updateTime()) : (clearInterval(timer));
             this.className = this.className == '' ? "cancel" : '';
         };
         function format(a) {
