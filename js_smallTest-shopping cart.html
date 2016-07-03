@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>input失去焦点比较值</title>
+</head>
+<body>
+<label for="cart"><input type="text" id="cart" name="cart" value="0" style="background-color: yellow"/></label>
+<label for="sub"><input type="text" id="sub" name="sub"  style="background-color: blueviolet"/></label>
+<script>
+    window.onload=function () {
+        var oInput = document.getElementById("cart");
+            var val= oInput.value;
+        oInput.onblur=function () {
+            oInput.style.background="#fff"
+            tmp = oInput.value;
+            if(val==tmp){
+                alert("error");
+            }else {
+                alert("successful");
+            }
+            val = tmp
+        }
+        oInput.onfocus=function () {
+            oInput.style.background="yellow";
+        }
+            console.log(val);
+            console.log(tmp);
+    }
+</script>
+</body>
+</html>
