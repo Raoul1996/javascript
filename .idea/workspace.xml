@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c046fe7d-06d1-4789-8ef8-a1d33f212170" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DOM事件解密/QQ/images/boxy_btn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DOM事件解密/QQ/images/login_btn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DOM事件解密/QQ/images/login_window_logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DOM事件解密/QQ/images/ptlogin.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DOM事件解密/QQ/css/main.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DOM事件解密/QQ/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DOM事件解密/QQ/js/drag.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DOM事件解密/event/event.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DOM事件解密/event/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DOM事件解密/event/js/event.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DOM事件解密/event/js/script.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DOM事件解密/event/笔记.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DOM事件解密/keyEvent/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DOM事件解密/keyEvent/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DOM事件解密/keyEvent/js/script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test1.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="javascript.iws" />
@@ -37,8 +23,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="js-alert.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js-alert.html">
+      <file leaf-file-name="test1.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="60" column="40" selection-start-line="60" selection-start-column="40" selection-end-line="60" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="js_loop.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js_loop.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -47,11 +43,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="js_calenada.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js_calenada.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="654">
+              <caret line="106" column="23" selection-start-line="106" selection-start-column="23" selection-end-line="106" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -83,6 +79,7 @@
         <option value="$PROJECT_DIR$/p+input.html" />
         <option value="$PROJECT_DIR$/js_SmallTest.html" />
         <option value="$PROJECT_DIR$/js_smallTest-shopping cart.html" />
+        <option value="$PROJECT_DIR$/test1.html" />
       </list>
     </option>
   </component>
@@ -93,9 +90,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="width" value="1261" />
-    <option name="height" value="1038" />
+    <option name="x" value="65" />
+    <option name="y" value="24" />
+    <option name="width" value="1855" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -123,6 +121,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -141,55 +140,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascript" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascript" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascript" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascript" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DOM事件解密" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascript" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascript" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DOM事件解密" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="event" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -199,8 +151,14 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
   </component>
-  <component name="RunManager" selected="JavaScript Debug.clock.html">
+  <component name="RunManager" selected="JavaScript Debug.js_calenada.html">
     <configuration default="false" name="clock.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/javascript/clock.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="test1.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/javascript/test1.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="js_calenada.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/javascript/js_calenada.html">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -256,12 +214,16 @@
       <recursive>false</recursive>
       <method />
     </configuration>
-    <list size="1">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.clock.html" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.test1.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.js_calenada.html" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.clock.html" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.js_calenada.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.test1.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.clock.html" />
       </list>
     </recent_temporary>
   </component>
@@ -293,6 +255,7 @@
       <workItem from="1467348195381" duration="2514000" />
       <workItem from="1467558033966" duration="2066000" />
       <workItem from="1473514317516" duration="215000" />
+      <workItem from="1473601209677" duration="7509000" />
     </task>
     <task id="LOCAL-00001" summary="45">
       <created>1463831323419</created>
@@ -340,29 +303,29 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35772000" />
+    <option name="totallyTimeSpent" value="43281000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1261" height="1038" extended-state="0" />
-    <editor active="false" />
+    <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31927213" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15671232" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295711" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -387,20 +350,17 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js_Notice2.html" />
     <entry file="file://$PROJECT_DIR$/js_images.html" />
     <entry file="file://$PROJECT_DIR$/Js_i++.html" />
     <entry file="file://$PROJECT_DIR$/js_confirm10.html" />
     <entry file="file://$PROJECT_DIR$/js2.html" />
     <entry file="file://$PROJECT_DIR$/js-alert.html" />
     <entry file="file://$PROJECT_DIR$/js_button.html" />
-    <entry file="file://$PROJECT_DIR$/js_onmouse事件.html" />
     <entry file="file://$PROJECT_DIR$/js_operateSelect.html" />
     <entry file="file://$PROJECT_DIR$/sh.html" />
     <entry file="file://$PROJECT_DIR$/js_operateInput.html" />
     <entry file="file://$PROJECT_DIR$/js_numvs.html" />
     <entry file="file://$PROJECT_DIR$/js传参.html" />
-    <entry file="file://$PROJECT_DIR$/js_window.html" />
     <entry file="file://$PROJECT_DIR$/Js_sum.html" />
     <entry file="file://$PROJECT_DIR$/js_select more.html" />
     <entry file="file://$PROJECT_DIR$/js_parseint.html" />
@@ -412,31 +372,51 @@
     <entry file="file://$PROJECT_DIR$/settime out.html" />
     <entry file="file://$PROJECT_DIR$/test01.html" />
     <entry file="file://$PROJECT_DIR$/test.html" />
-    <entry file="file://$PROJECT_DIR$/p+input.html" />
     <entry file="file://$PROJECT_DIR$/settimeout.html" />
     <entry file="file://$PROJECT_DIR$/js_confirm10.html" />
-    <entry file="file://$PROJECT_DIR$/webclock.html" />
     <entry file="file://$PROJECT_DIR$/index.css" />
     <entry file="file://$PROJECT_DIR$/js copy.html" />
     <entry file="file://$PROJECT_DIR$/js1.html" />
     <entry file="file://$PROJECT_DIR$/js_innerHTML.html" />
     <entry file="file://$PROJECT_DIR$/js_checkinput.html" />
     <entry file="file://$PROJECT_DIR$/js2.html" />
-    <entry file="file://$PROJECT_DIR$/js_loop.html" />
     <entry file="file://$PROJECT_DIR$/js_Notice.html" />
     <entry file="file://$PROJECT_DIR$/js_images.html" />
     <entry file="file://$PROJECT_DIR$/clock.html" />
     <entry file="file://$PROJECT_DIR$/img.html" />
-    <entry file="file://$PROJECT_DIR$/js bymyself.html" />
     <entry file="file://$PROJECT_DIR$/js-img.html" />
-    <entry file="file://$PROJECT_DIR$/js_calenada.html" />
     <entry file="file://$PROJECT_DIR$/js_button.html" />
     <entry file="file://$PROJECT_DIR$/js_change.html" />
     <entry file="file://$PROJECT_DIR$/js_changepic.html" />
     <entry file="file://$PROJECT_DIR$/js_choose.html" />
     <entry file="file://$PROJECT_DIR$/js_SmallTest.html" />
     <entry file="file://$PROJECT_DIR$/js_smallTest-shopping cart.html" />
-    <entry file="file://$PROJECT_DIR$/js-alert.html">
+    <entry file="file://$PROJECT_DIR$/.gitignore" />
+    <entry file="file://$PROJECT_DIR$/webclock.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-330">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js bymyself.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-803">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js_window.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1486">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p+input.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -444,10 +424,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/js-alert.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-528">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js_calenada.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="654">
+          <caret line="106" column="23" selection-start-line="106" selection-start-column="23" selection-end-line="106" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js_onmouse事件.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="37" column="33" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js_loop.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="60" column="40" selection-start-line="60" selection-start-column="40" selection-end-line="60" selection-end-column="40" />
           <folding />
         </state>
       </provider>
